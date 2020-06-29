@@ -16,8 +16,8 @@ $.ajax({
                 labels: [`Total Agents: ${data['agents_count']}`, `Total Customers: ${data['customers_count']}`, `Total Transactions: ${data['transactions_count']}`],
                 datasets: [{
                     data: [data['agents_count'],data['customers_count'],data['transactions_count']],
-                    backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1"],
-                    hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5"]
+                    backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C"],
+                    hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870"]
                 }]
             },
             options: {
