@@ -12,7 +12,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
 
-        if (app()->environment() === 'local'){
+
             // Ask for db migration refresh, default is no
             if ($this->command->confirm('Do you wish to refresh migration before seeding, it will clear all old data ?')) {
 
@@ -27,19 +27,11 @@ class DatabaseSeeder extends Seeder
                 TypeSeeder::class,
                 AgentSeeder::class,
                 FriendSeeder::class,
+                CashBackSeeder::class,
                 CountrySeeder::class
             ]);
             $this->command->info("Database seeded.");
-        }else{
-            $this->call([
-                UserSeeder::class,
-                WalletSeeder::class,
-                TypeSeeder::class,
-                AgentSeeder::class,
-                FriendSeeder::class,
-                CountrySeeder::class
-            ]);
-        }
+
 
     }
 }
