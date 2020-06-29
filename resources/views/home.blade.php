@@ -6,7 +6,7 @@
         <div class="col-sm-4">
             <div class="row">
                 <div class="col-sm-12">
-                    <canvas id="labelChart"></canvas>
+                    <canvas id="doughnutChart"></canvas>
                 </div>
                 <div class="col-sm-12">
                     @include('admin.analytics.topClients',['topUsers'=>$topUsers])
