@@ -1,0 +1,9 @@
+html,body {
+    height: 100% !important;
+}
+.table-responsive {
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+
